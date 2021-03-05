@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
@@ -38,10 +38,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
     
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     <script>
         const images = ["images-slides/slider-img-1.jpeg", "images-slides/slider-img-2.jpeg", "images-slides/slider-img-3.jpeg", "images-slides/slider-img-4.jpeg", "images-slides/slider-img-5.jpeg"];
-        const texts = [["Educação"], ["Criação"], ["Blog"], ["Bussines"], ["Call To Action"]];
+        const texts = [
+        ["Educação"], 
+        ["Criação"], 
+        ["Blog"], 
+        ["Bussines"], 
+        ["Call To Action"]
+    ];
 
         rgbKineticSlider = new rgbKineticSlider({
             slideImages: images,
@@ -65,7 +71,9 @@
             nav: true,
             navElement: ".main-nav",
 
-            imagesRgbEffect: true,
+            buttonMode : true,
+
+            imagesRgbEffect: false,
             imagesRgbIntensity: 4,
             navImagesRgbIntensity: 120,
 
@@ -76,6 +84,20 @@
             textsRgbEffect: true,
             textsRgbIntensity: 1,
         });
+    </script>
+    <script>
+        var pos = document.documentElement;
+        pos.addEventListener('mousemove', e => {
+            pos.style.setProperty('--x', e.clientX + 'px');
+            pos.style.setProperty('--y', e.clientY + 'px');
+        })
+        let text = baffle('.data');
+        text.set({
+            characteres: '@$#%¨&&@*&¨#@!',
+            speed: 150,
+        });
+        text.start();
+        text.reveal('50000');
     </script>
 </body>
 </html>

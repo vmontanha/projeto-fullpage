@@ -1,0 +1,226 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main .nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+.brand, .search, .menu1 {
+    position: absolute;
+    line-height: 80px;
+}
+
+.brand {
+    margin-left: 40px;
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 16px;
+}
+
+.search {
+    right: 140px;
+    color: #fff;
+}
+
+.menu1{
+    right: 40px;
+    font-family: Helvetica;
+    color: #fff;
+    font-size: 20px;
+}
+
+.media {
+    position: absolute;
+    right: -150px;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.media ul {
+    list-style: none;
+}
+
+.media ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .7);
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-right: 40px;
+}
+
+.media ul:hover {
+    color:#fff;
+    padding: 0.5rem;
+    transition: ease-in 1s;
+    cursor: pointer;
+}
+
+.share {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.header {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Monument Extended";
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 150px;
+}
+
+h1 span {
+    -webkit-text-stroke: 1px #fff;
+    color: rgba(0,0,0,0);
+}
+
+.bottomnav {
+    position: absolute;
+    width: 45%;
+    height: 80px;
+    bottom: -40px;
+    background: #fff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottomnav .ul-primario {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 80px;
+    float: right;
+}
+
+.bottomnav .ul-primario .li-secundario {
+    padding-right: 50px !important;
+    display: inline-block !important;
+    font-size: 22px;
+    color: black;
+}
+
+.bottomnav .ul-primario .li-secundario a:visited {
+    color: black;
+}
+
+.bar {
+    position: absolute;
+    margin: 0;
+    background: rgba(0,0,0,0.3);
+    width: 50%;
+    height: 1px;
+    top: 50%;
+    left: 19%;
+}
+
+.counter {
+    position: absolute;
+    font-family: Poppins;
+    font-weight: bolder;
+    color: #000;
+    line-height: 80px;
+    padding-left: 50px;
+}
+.toggle-btn {
+    position: fixed;
+    margin-right: 1rem;
+    padding: 2em;
+    width: 40px;
+    height: 12px;
+    right: 0;
+    z-index: 1;
+}
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+span.one {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+}
+
+span.two {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin-top: 12px;
+}
+
+.menu {
+    z-index: 0;
+    position: absolute;
+    background: #101010ef;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+}
+
+.data {
+    top: 20vh !important;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+}
+
+.link:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    transition: .5s ease-in;
+}
+
+.menu .data li {
+    color: rgba(128, 128, 128, 0.45);
+    list-style: none;
+    font-size: 40px;
+}
+
+.menu .data a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 90px;
+    line-height: 10rem;
+}
+
+.menu .data a:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+@media(min-width: 768px) {
+    .menu .data a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 70px;
+        line-height: 15vh;
+    }
+}

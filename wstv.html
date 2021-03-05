@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <title>WS Academy</title>
+    <title>WS TV</title>
 </head>
 <script src="js/pixi.min.js"></script>
 <body data-barba="wrapper">
@@ -31,7 +31,7 @@
 
       <div class="header">
             <h1>WS</h1>
-            <h1><span>Academy</span></h1>
+            <h1><span>TV</span></h1>
       </div>
 
       <div class="media">
@@ -42,11 +42,11 @@
             </ul>
       </div>
       <div class="bottomnav">
-            <div class="counter">WSBS</div>
+            <div class="counter">WSN</div>
             <div class="bar"></div>
             <ul class="ul-primario">
-                  <li class="li-secundario"><a href="wsbussiness.html"><ion-icon name="arrow-down"></ion-icon></a></li>
-                  <li class="li-secundario"><a href="wstv.html"><ion-icon name="arrow-up"></ion-icon></a></li>
+                  <li class="li-secundario"><a href="wstropaelite.html"><ion-icon name="arrow-down"></ion-icon></a></li>
+                  <li class="li-secundario"><a href="wsnews.html"><ion-icon name="arrow-up"></ion-icon></a></li>
             </ul>
       </div>
 
@@ -110,7 +110,7 @@
           var container = new PIXI.Container();
           app.stage.addChild(container);
   
-         PIXI.loader.add("images/bg-ws/ripple.png").add("images/bg-ws/bg-education.jpeg").load(setup);
+         PIXI.loader.add("images/bg-ws/ripple.png").add("images/bg-ws/bg-tv.jpeg").load(setup);
   
         // In the ‘setup’ function the displacement sprite is created
         // that will create the effect and this is added to a displacement filter.
@@ -131,7 +131,7 @@
               container.filters = [displacementFilter];
               displacementFilter.scale.x = 0;
               displacementFilter.scale.y = 0;
-              bg = new PIXI.Sprite(PIXI.loader.resources["images/bg-ws/bg-education.jpeg"].texture);
+              bg = new PIXI.Sprite(PIXI.loader.resources["images/bg-ws/bg-tv.jpeg"].texture);
               bg.width = app.renderer.width;
               bg.height = app.renderer.height;
               container.addChild(bg);
